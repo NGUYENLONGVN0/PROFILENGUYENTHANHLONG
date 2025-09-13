@@ -4,383 +4,902 @@
   <link rel="icon" type="image/png" href="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/535588174_1082745653978923_7367556418654142325_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHogtYVrH-re-j88sDTsqvTDKwdANCnXcUMrB0A0KddxX_1llcMpvbDJCf2Fz11jBUZW6aCUVQeRjTilYGFY0ia&_nc_ohc=k_ESyNwKaesQ7kNvwHKHs3r&_nc_oc=AdmTKS1F_YydzQYJWn4StmqGFgxKmgg6jJey596WkYll53gryHOTkX9XmBsKro_OknTF6mm2Zy_yJEiyrbcfrylU&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=CLw_hzlsIHWsgiAlAVUveA&oh=00_AfXCxcoDYwIlejPgxWnv2lso4YcWc-8eE3q862hPvxJBPw&oe=68ACB203">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Trang cá nhân của Nguyễn Thanh Long, học sinh THPT Củ Chi, đam mê công nghệ, lập trình, IoT và thiết kế web.">
-  <meta name="keywords" content="Nguyễn Thanh Long, lập trình, IoT, thiết kế web, THPT Củ Chi">
-  <meta property="og:title" content="Nguyễn Thanh Long - information">
-  <meta property="og:description" content="Khám phá Mainpage của Nguyễn Thanh Long, học sinh đam mê công nghệ và sáng tạo.">
-  <meta property="og:image" content="https://via.placeholder.com/150">
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Thanh Long, học sinh THPT Củ Chi, đam mê công nghệ, lập trình, IoT, thiết kế web và STEM.">
+  <meta name="keywords" content="Nguyễn Thanh Long, lập trình, IoT, thiết kế web, THPT Củ Chi, STEM, công nghệ, sáng tạo">
+  <meta name="author" content="Nguyễn Thanh Long">
+  <meta property="og:title" content="Nguyễn Thanh Long - Portfolio">
+  <meta property="og:description" content="Khám phá portfolio cá nhân của Nguyễn Thanh Long, học sinh đam mê công nghệ, lập trình và sáng tạo.">
+  <meta property="og:image" content="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/535588174_1082745653978923_7367556418654142325_n.jpg">
   <meta property="og:url" content="https://yourwebsite.com">
-  <title>Nguyễn Thanh Long - MainPage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta property="og:type" content="website">
+  <title>Nguyễn Thanh Long - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.11.0/dist/js-confetti.browser.js"></script>
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
-    html {scroll-behavior: smooth;}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: #fff;
-      position: relative;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f0f4ff 0%, #e9ecef 100%);
+      color: #1e293b;
       overflow-x: hidden;
+      line-height: 1.6;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="rgba(99,102,241,0.1)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,122.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,128L1440,117L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,0,320Z"%3E%3C/path%3E%3C/svg%3E') no-repeat bottom,
+                  url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="rgba(167,139,250,0.1)" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,122.7C384,128,480,160,576,165.3C672,171,768,149,864,133.3C960,117,1056,107,1152,128C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,0,320Z"%3E%3C/path%3E%3C/svg%3E') no-repeat bottom;
+      background-size: cover;
+      z-index: -1;
+      animation: wave 12s ease-in-out infinite alternate;
+    }
+    @keyframes wave {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-30px); }
+    }
+    .orb {
+      position: fixed;
+      background: radial-gradient(circle, rgba(99,102,241,0.3), transparent);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: float 20s infinite linear;
+      z-index: -1;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-50vh) scale(1.2); }
+      100% { transform: translateY(0) scale(1); }
     }
     header {
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #6366f1, #a78bfa);
       color: #fff;
-      padding: 60px 20px;
+      padding: 100px 20px 120px;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
       position: relative;
       overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
-    header::before {
+    header::after {
       content: '';
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10%);
-      background-size: 20px 20px;
-      opacity: 0.3;
-      z-index: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,122.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,128L1440,117L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,0,320Z"%3E%3C/path%3E%3C/svg%3E') no-repeat bottom;
+      background-size: cover;
+      animation: wave 8s ease-in-out infinite alternate;
     }
-    header h1 { font-size: 3rem; margin-bottom: 10px; font-weight: 700; position: relative; z-index: 1; }
-    header p { font-size: 1.3rem; opacity: 0.9; position: relative; z-index: 1; }
+    header h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      animation: slideUp 1s ease-out;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      opacity: 0.9;
+      animation: slideUp 1.2s ease-out;
+    }
+    header .typing {
+      font-size: 1.5rem;
+      font-weight: 300;
+      display: inline-block;
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30, end) infinite alternate, blink 0.5s step-end infinite;
+    }
+    @keyframes typing {
+      0% { width: 0; }
+      50% { width: 100%; }
+      100% { width: 0; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      box-shadow: 0 8px 24px rgba(99, 102, 241, 0.2);
+      margin: auto;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      animation: pulse 3s infinite ease-in-out;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .avatar:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 32px rgba(99, 102, 241, 0.4), 0 0 20px rgba(167, 139, 250, 0.5);
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
     nav {
       position: sticky;
       top: 0;
-      z-index: 4;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(8px);
+      z-index: 10;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 10px 0;
     }
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 10px;
-      border-radius: 0 0 15px 15px;
+      max-width: 1200px;
+      margin: auto;
     }
-    nav ul li {margin: 8px;}
+    nav ul li { margin: 8px 15px; }
     nav ul li a {
       text-decoration: none;
-      color: #fff;
+      color: #1e293b;
       font-weight: 600;
-      padding: 8px 15px;
-      border-radius: 6px;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border-radius: 8px;
       transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
     }
-    nav ul li a:hover, nav ul li a:focus {background: #38bdf8; transform: translateY(-2px);}
-    .section {padding: 60px 20px; max-width: 1000px; margin: auto; position: relative; z-index: 2;}
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+    nav ul li a:hover, nav ul li a:focus {
+      color: #fff;
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    }
+    nav ul li a:hover::after { transform: translateX(0); }
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      opacity: 0;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
     .section h2 {
-      font-size: 2.2rem;
-      color: #38bdf8;
-      margin-bottom: 20px;
-      text-align: left; /* Thay từ center thành left */
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      animation: slideUp 0.8s ease-out;
     }
-    .avatar {
-      width: 160px; height: 160px; border-radius: 50%;
-      border: 5px solid #fff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      margin: auto; display: block; object-fit: cover; object-position: center;
-      transition: transform 0.3s ease;
-    }
-    .avatar:hover {transform: scale(1.05);}
     .bio {
-      text-align: left; /* Thay từ center thành left */
-      margin-top: 20px;
+      text-align: left;
+      margin-top: 30px;
       font-size: 1.2rem;
-      line-height: 1.7;
-      background: rgba(255,255,255,0.05);
-      padding: 20px;
+      line-height: 1.8;
+      background: #f8fafc;
+      padding: 30px;
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease-out;
     }
-    .skills {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;}
+    .bio a {
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .bio a:hover {
+      color: #a78bfa;
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
     .skill {
-      background: rgba(255,255,255,0.08);
-      padding: 20px;
+      background: #fff;
+      padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .skill:hover {transform: translateY(-5px);}
-    .skill strong {display: block; margin-bottom: 10px; font-size: 1.1rem;}
+    .skill:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+    }
+    .skill strong {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
     .progress-bar {
-      height: 10px;
-      background: rgba(255,255,255,0.2);
+      height: 12px;
+      background: #e2e8f0;
       border-radius: 6px;
       overflow: hidden;
       position: relative;
     }
+    .progress-bar:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: -30px;
+      right: 10px;
+      background: #1e293b;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
     .progress {
       height: 100%;
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
       width: 0;
-      transition: width 1.5s ease-in-out;
+      border-radius: 6px;
+      position: relative;
+      overflow: hidden;
+      transition: width 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .progress::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      animation: shimmer 1.5s infinite linear;
+    }
+    .progress.filled::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: pulseProgress 0.5s ease-in-out;
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes pulseProgress {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
     }
     .progress::after {
       content: attr(data-width);
       position: absolute;
-      right: 10px;
-      top: -25px;
-      font-size: 0.9rem;
-      color: #fff;
+      right: 12px;
+      top: -28px;
+      font-size: 0.95rem;
+      color: #1e293b;
+      font-weight: 500;
     }
     .achievements {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
     }
     .achievement {
-      background: rgba(255,255,255,0.08);
-      padding: 20px;
+      background: #fff;
+      padding: 25px;
       border-radius: 12px;
       text-align: center;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    .achievement:hover {transform: translateY(-5px);}
+    .achievement:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+    }
     .achievement i {
-      font-size: 2rem;
-      color: #38bdf8;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
     }
+    .achievement:hover i { transform: scale(1.2) rotate(5deg); }
     .achievement h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: #1e293b;
+      font-weight: 600;
     }
     .achievement p {
       font-size: 1rem;
       line-height: 1.6;
-      color: #ccc;
+      color: #64748b;
     }
     .contact form {
-      display: grid; 
-      gap: 15px; 
-      padding-left: 20px;
+      display: grid;
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+      padding: 0 20px;
     }
     .contact input, .contact textarea {
-      padding: 12px;
-      border: none;
+      padding: 14px;
+      border: 1px solid #e2e8f0;
       border-radius: 8px;
       outline: none;
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #1e293b;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
-    .contact input::placeholder, .contact textarea::placeholder {color: #ccc;}
+    .contact input:focus, .contact textarea:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1), 0 0 8px rgba(99, 102, 241, 0.3);
+      animation: pulseBorder 1.5s infinite;
+    }
+    @keyframes pulseBorder {
+      0%, 100% { box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
+      50% { box-shadow: 0 0 0 5px rgba(99, 102, 241, 0.2); }
+    }
+    .contact input::placeholder, .contact textarea::placeholder {
+      color: #94a3b8;
+      font-weight: 400;
+    }
+    .contact form.error {
+      animation: shake 0.3s ease-in-out;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+    }
     .contact button {
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
       color: #fff;
       border: none;
-      padding: 12px;
+      padding: 14px;
       border-radius: 8px;
       cursor: pointer;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1.1rem;
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
     }
-    .contact button:hover {transform: scale(1.05); box-shadow: 0 4px 15px rgba(0,0,0,0.3);}
+    .contact button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+    }
+    .contact button:hover::before {
+      width: 400px;
+      height: 400px;
+    }
+    .contact button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+      background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    }
+    .contact button:active {
+      transform: scale(0.95);
+    }
     .contact button::after {
       content: 'Gửi';
       position: absolute;
-      top: 50%; left: 50%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      opacity: 1;
       transition: opacity 0.3s;
     }
-    .contact button.loading::after {content: 'Đang gửi...'; opacity: 1;}
-    .contact button.success::after {content: 'Đã gửi!'; opacity: 1; background: #10b981;}
-    .contact button.error::after {content: 'Lỗi!'; opacity: 1; background: #ef4444;}
+    .contact button.loading::after { content: 'Đang gửi...'; }
+    .contact button.success::after { content: 'Đã gửi!'; background: #10b981; }
+    .contact button.error::after { content: 'Lỗi!'; background: #ef4444; }
     .contact-info {
-      margin-top: 20px;
-      text-align: left; /* Thay từ center thành left */
+      margin-top: 30px;
+      text-align: left;
       font-size: 1.1rem;
-      color: #ccc;
+      color: #64748b;
+      max-width: 600px;
+      margin: 30px auto 0;
+      padding: 0 20px;
     }
     .contact-info a {
-      color: #38bdf8;
+      color: #6366f1;
       text-decoration: none;
-      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
     .contact-info a:hover {
+      color: #a78bfa;
       text-decoration: underline;
     }
     footer {
       text-align: center;
-      padding: 40px;
-      background: rgba(0,0,0,0.4);
+      padding: 50px 20px;
+      background: linear-gradient(180deg, #f0f4ff, #e9ecef);
       font-size: 1rem;
+      border-top: 1px solid #e2e8f0;
     }
-    footer p {line-height: 1.6;}
-    footer a {color: #38bdf8; text-decoration: none;}
-    footer a:hover {text-decoration: underline;}
-    #particles-js {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;}
-    .social-sidebar {
-      position: fixed; top: 50%; left: 10px; transform: translateY(-50%);
-      display: flex; flex-direction: column; gap: 12px;
-      z-index: 3;
-    }
-    .social-sidebar a {
-      color: #fff; font-size: 22px; background: rgba(255,255,255,0.1);
-      padding: 12px; border-radius: 50%;
+    footer p { line-height: 1.8; }
+    footer a {
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: 500;
       transition: all 0.3s ease;
     }
-    .social-sidebar a:hover, .social-sidebar a:focus {background: #38bdf8; transform: scale(1.1);}
-    .quote-right {
-      position: fixed; top: 50%; right: 10px; transform: translateY(-50%);
-      max-width: 180px; background: rgba(255,255,255,0.1); padding: 15px;
-      font-style: italic; font-size: 0.95rem;
-      color: #38bdf8; border-left: 4px solid #38bdf8;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2); border-radius: 8px;
-      z-index: 3;
+    footer a:hover {
+      color: #a78bfa;
+      text-decoration: underline;
+      text-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
     }
-    @media (max-width: 600px) {
-      .social-sidebar, .quote-right {display: none;}
-      nav ul {flex-direction: column;}
-      .avatar {width: 120px; height: 120px;}
-      header h1 {font-size: 2rem;}
-      header p {font-size: 1rem;}
-      .section h2 {font-size: 1.8rem;}
-      .bio {font-size: 1rem;}
+    .social-sidebar {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%) translateX(calc(var(--scroll, 0) * -5px));
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 3;
+      transition: transform 0.3s ease;
+    }
+    .social-sidebar a {
+      color: #1e293b;
+      font-size: 24px;
+      background: #fff;
+      padding: 14px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .social-sidebar a:hover, .social-sidebar a:focus {
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      transform: scale(1.15) rotate(360deg);
+      box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
+      color: #fff;
+    }
+    .quote-right {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      max-width: 200px;
+      background: #fff;
+      padding: 20px;
+      font-style: italic;
+      font-size: 1rem;
+      color: #6366f1;
+      border-left: 4px solid #6366f1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      z-index: 3;
+      overflow: hidden;
+    }
+    .quote-right span {
+      display: inline-block;
+      animation: typing 3s steps(30, end) forwards;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #6366f1;
+    }
+    @keyframes typing {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+    .chatbox-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite ease-in-out;
+      z-index: 15;
+      transition: transform 0.3s ease;
+    }
+    .chatbox-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
+    }
+    .chatbox {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 400px;
+      height: 600px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+      z-index: 15;
+      animation: slideIn 0.5s ease-out;
+    }
+    .chatbox.open {
+      display: flex;
+    }
+    @keyframes slideIn {
+      0% { transform: translateY(100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .chatbox-header {
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      color: #fff;
+      padding: 15px;
+      border-radius: 12px 12px 0 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chatbox-header span { cursor: pointer; }
+    .chatbox-body {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .chatbox-message {
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      max-width: 80%;
+      line-height: 1.4;
+      word-wrap: break-word;
+      animation: fadeInChat 0.5s ease-out;
+    }
+    .chatbox-message.user {
+      background: #6366f1;
+      color: #fff;
+      margin-left: auto;
+      border-radius: 8px 8px 0 8px;
+    }
+    .chatbox-message.bot {
+      background: #e2e8f0;
+      color: #1e293b;
+      margin-right: auto;
+      border-radius: 8px 8px 8px 0;
+    }
+    @keyframes fadeInChat {
+      0% { opacity: 0; transform: translateX(20px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .chatbox-input {
+      display: flex;
+      padding: 15px;
+      background: #fff;
+      border-top: 1px solid #e2e8f0;
+      border-radius: 0 0 12px 12px;
+    }
+    .chatbox-input input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1rem;
+    }
+    .chatbox-input input:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+    .chatbox-input button {
+      background: linear-gradient(90deg, #6366f1, #a78bfa);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .chatbox-input button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+    }
+    .chatbox-input button:hover::before {
+      width: 200px;
+      height: 200px;
+    }
+    .chatbox-input button:hover {
+      transform: scale(1.05);
+    }
+    .chatbox-input button:active {
+      transform: scale(0.95);
+    }
+    @media (max-width: 768px) {
+      .social-sidebar { left: 10px; gap: 10px; }
+      .social-sidebar a { font-size: 20px; padding: 10px; }
+      .quote-right { max-width: 160px; font-size: 0.9rem; padding: 15px; right: 10px; }
+      .quote-right span { animation: none; border-right: none; }
+      nav ul { flex-direction: column; padding: 10px 0; }
+      nav ul li { margin: 6px 0; }
+      .avatar { width: 150px; height: 150px; animation: none; }
+      header h1 { font-size: 2.8rem; }
+      header p, header .typing { font-size: 1.3rem; }
+      .section h2 { font-size: 2rem; }
+      .bio { font-size: 1.1rem; padding: 20px; }
+      .skill, .achievement { padding: 20px; }
+      .contact form { gap: 15px; }
+      .section { padding: 60px 15px; margin-bottom: 20px; }
+      .orb { display: none; }
+      .chatbox { width: 90%; height: 350px; }
+      .chatbox-input button::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .social-sidebar, .quote-right { display: none; }
+      header { padding: 60px 15px 80px; }
+      .avatar { width: 120px; height: 120px; }
+      header h1 { font-size: 2.2rem; }
+      header p, header .typing { font-size: 1.1rem; animation: none; }
+      .section { padding: 50px 15px; }
+      .section h2 { font-size: 1.8rem; }
+      .bio { font-size: 1rem; }
+      .contact input, .contact textarea { padding: 12px; }
+      .contact button { padding: 12px; font-size: 1rem; }
+      .chatbox { width: 90%; height: 300px; }
+      .chatbox-toggle { width: 50px; height: 50px; font-size: 20px; }
     }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
-
-  <aside class="social-sidebar" data-aos="fade-right">
+  <aside class="social-sidebar" data-aos="fade-right" data-aos-delay="200" role="complementary" aria-label="Liên kết mạng xã hội">
     <a href="https://facebook.com/nguyenlong1702" aria-label="Facebook của Nguyễn Thanh Long"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/thann._.lonnq/" aria-label="Instagram của Nguyễn Thanh Long"><i class="fab fa-instagram"></i></a>
   </aside>
 
-  <aside class="quote-right" data-aos="fade-left">
-    "Học không giỏi cũng được,miễn là đam mê và cố gắng mỗi ngày!"
+  <aside class="quote-right" data-aos="fade-left" data-aos-delay="300" role="complementary" aria-label="Trích dẫn cảm hứng">
+    <span>"Học không giỏi cũng được, miễn là đam mê và cố gắng mỗi ngày!"</span>
   </aside>
 
-  <header data-aos="fade-down">
-    <img src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/535588174_1082745653978923_7367556418654142325_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHogtYVrH-re-j88sDTsqvTDKwdANCnXcUMrB0A0KddxX_1llcMpvbDJCf2Fz11jBUZW6aCUVQeRjTilYGFY0ia&_nc_ohc=k_ESyNwKaesQ7kNvwHKHs3r&_nc_oc=AdmTKS1F_YydzQYJWn4StmqGFgxKmgg6jJey596WkYll53gryHOTkX9XmBsKro_OknTF6mm2Zy_yJEiyrbcfrylU&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=CLw_hzlsIHWsgiAlAVUveA&oh=00_AfXCxcoDYwIlejPgxWnv2lso4YcWc-8eE3q862hPvxJBPw&oe=68ACB203" class="avatar" alt="Ảnh đại diện của Nguyễn Thanh Long">
+  <header data-aos="fade-down" role="banner">
+    <img src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/535588174_1082745653978923_7367556418654142325_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHogtYVrH-re-j88sDTsqvTDKwdANCnXcUMrB0A0KddxX_1llcMpvbDJCf2Fz11jBUZW6aCUVQeRjTilYGFY0ia&_nc_ohc=k_ESyNwKaesQ7kNvwHKHs3r&_nc_oc=AdmTKS1F_YydzQYJWn4StmqGFgxKmgg6jJey596WkYll53gryHOTkX9XmBsKro_OknTF6mm2Zy_yJEiyrbcfrylU&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=CLw_hzlsIHWsgiAlAVUveA&oh=00_AfXCxcoDYwIlejPgxWnv2lso4YcWc-8eE3q862hPvxJBPw&oe=68ACB203" class="avatar" alt="Ảnh đại diện của Nguyễn Thanh Long" loading="lazy" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
     <h1>Nguyễn Thanh Long</h1>
-    <p>Student |Ho Chi Minh City</p>
+    <p><span class="typing" data-words="Công nghệ,Lập trình,IoT,Sáng tạo">Học sinh THPT Củ Chi | Đam mê </span></p>
   </header>
 
-  <nav>
+  <nav role="navigation" aria-label="Điều hướng chính">
     <ul>
-      <li><a href="#about">Giới thiệu</a></li>
-      <li><a href="#skills">Kỹ năng</a></li>
-      <li><a href="#achievements">Thành tích</a></li>
-      <li><a href="#contact">Liên hệ</a></li>
+      <li><a href="#about" aria-current="page" data-aos="fade-up" data-aos-delay="100">Giới thiệu</a></li>
+      <li><a href="#skills" data-aos="fade-up" data-aos-delay="200">Kỹ năng</a></li>
+      <li><a href="#achievements" data-aos="fade-up" data-aos-delay="300">Thành tích</a></li>
+      <li><a href="#contact" data-aos="fade-up" data-aos-delay="400">Liên hệ</a></li>
     </ul>
   </nav>
 
-  <section class="section" id="about" data-aos="fade-up">
-    <h2>Giới thiệu</h2>
+  <section class="section" id="about" data-aos="fade-right" data-aos-delay="100" role="region" aria-labelledby="about-heading">
+    <h2 id="about-heading">Giới thiệu</h2>
     <div class="bio">
-      Xin chào! Mình là Nguyễn Thanh Long, học sinh lớp 11A3 tại THPT Củ Chi. Mình đam mê công nghệ, lập trình, IoT và thiết kế web.
+      Xin chào! Mình là Nguyễn Thanh Long, học sinh lớp 11A3 tại THPT Củ Chi, TP. Hồ Chí Minh. Mình đam mê công nghệ, lập trình, IoT và thiết kế web, luôn tìm tòi và sáng tạo để biến ý tưởng thành hiện thực.
     </div>
     <div class="bio" style="margin-top: 20px;">
-     <p>My information🥰:</p>
-      <a href="tel:+840888444984">Số điện thoại: +84 0888444984</a><br>
-      <a href="https://facebook.com/nguyenlong1702">Nguyễn Thanh Long</a><br>
-      <a href="https://www.instagram.com/thann._.lonnq/">thann._.lonnq</a><br>
-      <a href="nguyenlong17022009@gmail.com">Email:Nguyenlong17022009@gmail.com</a>
+      <p><strong>Thông tin cá nhân:</strong></p>
+      <p><a href="tel:+840888444984" aria-label="Số điện thoại">Số điện thoại: +84 0888444984</a></p>
+      <p><a href="mailto:nguyenlong17022009@gmail.com" aria-label="Email">Email: nguyenlong17022009@gmail.com</a></p>
+      <p><a href="https://facebook.com/nguyenlong1702" aria-label="Facebook">Facebook: Nguyễn Thanh Long</a></p>
+      <p><a href="https://www.instagram.com/thann._.lonnq/" aria-label="Instagram">Instagram: thann._.lonnq</a></p>
     </div>
   </section>
 
-  <section class="section" id="skills" data-aos="fade-up">
-    <h2>Kỹ năng học tập</h2>
+  <section class="section" id="skills" data-aos="fade-left" data-aos-delay="100" role="region" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Kỹ năng học tập</h2>
     <div class="skills">
-      <div class="skill"><strong>Toán</strong><div class="progress-bar"><div class="progress" data-width="50%"></div></div></div>
-      <div class="skill"><strong>Văn</strong><div class="progress-bar"><div class="progress" data-width="75%"></div></div></div>
-      <div class="skill"><strong>Lý</strong><div class="progress-bar"><div class="progress" data-width="45%"></div></div></div>
-      <div class="skill"><strong>Hóa</strong><div class="progress-bar"><div class="progress" data-width="65%"></div></div></div>
-      <div class="skill"><strong>Tiếng Anh</strong><div class="progress-bar"><div class="progress" data-width="80%"></div></div></div>
-      <div class="skill"><strong>Sinh</strong><div class="progress-bar"><div class="progress" data-width="60%"></div></div></div>
-      <div class="skill"><strong>Quốc phòng</strong><div class="progress-bar"><div class="progress" data-width="85%"></div></div></div>
-      <div class="skill"><strong>Lịch sử</strong><div class="progress-bar"><div class="progress" data-width="75%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="100"><strong>Toán</strong><div class="progress-bar" data-tooltip="50%"><div class="progress" data-width="50%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="150"><strong>Văn</strong><div class="progress-bar" data-tooltip="75%"><div class="progress" data-width="75%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="200"><strong>Lý</strong><div class="progress-bar" data-tooltip="45%"><div class="progress" data-width="45%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="250"><strong>Hóa</strong><div class="progress-bar" data-tooltip="65%"><div class="progress" data-width="65%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="300"><strong>Tiếng Anh</strong><div class="progress-bar" data-tooltip="80%"><div class="progress" data-width="80%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="350"><strong>Sinh</strong><div class="progress-bar" data-tooltip="60%"><div class="progress" data-width="60%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="400"><strong>Quốc phòng</strong><div class="progress-bar" data-tooltip="85%"><div class="progress" data-width="85%"></div></div></div>
+      <div class="skill" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="450"><strong>Lịch sử</strong><div class="progress-bar" data-tooltip="75%"><div class="progress" data-width="75%"></div></div></div>
     </div>
   </section>
 
-  <section class="section" id="achievements" data-aos="fade-up">
-    <h2>Thành tích</h2>
+  <section class="section" id="achievements" data-aos="fade-left" data-aos-delay="100" role="region" aria-labelledby="achievements-heading">
+    <h2 id="achievements-heading">Thành tích</h2>
     <div class="achievements">
-      <div class="achievement">
+      <div class="achievement" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="100">
         <i class="fas fa-trophy"></i>
-        <h3>Tin học</h3>
-        <p>Tham gia vòng chung kết hội thi tin học trẻ thành phố Hồ Chí Minh 2025.</p>
+        <h3>Tin học trẻ TP.HCM 2025</h3>
+        <p>Tham gia vòng chung kết hội thi Tin học trẻ thành phố Hồ Chí Minh 2025.</p>
       </div>
-      <div class="achievement">
+      <div class="achievement" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="150">
         <i class="fas fa-medal"></i>
-        <h3>Hội thi sáng tạo khoa học công nghệ CLB STEM toàn quốc 4/2025</h3>
-        <p>Giải Nhất .</p>
+        <h3>Hội thi sáng tạo khoa học công nghệ CLB STEM 4/2025</h3>
+        <p>Đạt giải Nhất toàn quốc.</p>
       </div>
-      <div class="achievement">
+      <div class="achievement" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="200">
         <i class="fas fa-book"></i>
-        <h3>Hoạt động thiết kế mô hình vật lí THPT Củ Chi</h3>
-        <p>Giải nhất.</p>
+        <h3>Thiết kế mô hình vật lý THPT Củ Chi</h3>
+        <p>Đạt giải Nhất.</p>
       </div>
-      <div class="achievement">
+      <div class="achievement" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-aos="fade-up" data-aos-delay="250">
         <i class="fas fa-code"></i>
-        <h3>Tham gia CLB</h3>
-        <p>Tham gia CLB STEM IOT và hoàn thành dự án IoT điều khiển nhà kính thông minh và giải nhất toàn quốc.</p>
+        <h3>CLB STEM IoT</h3>
+        <p>Hoàn thành dự án IoT điều khiển nhà kính thông minh, đạt giải Nhất toàn quốc.</p>
       </div>
     </div>
   </section>
 
-  <section class="section contact" id="contact" data-aos="fade-up">
-    <h2>Liên hệ với mình</h2>
-    <div id="form-message" style="display: none; text-align: center; color: #10b981; margin-bottom: 15px;"></div>
-    <form id="contact-form" action="https://formspree.io/f/xjkwygzd" method="POST">
-      <input type="text" name="name" placeholder="Họ tên" required aria-label="Họ tên">
-      <input type="email" name="email" placeholder="Email" required aria-label="Email">
-      <input type="tel" name="phone" placeholder="Số điện thoại" aria-label="Số điện thoại">
-      <textarea name="message" rows="5" placeholder="Nội dung..." required aria-label="Nội dung"></textarea>
-      <button type="submit">Gửi</button>
+  <section class="section contact" id="contact" data-aos="fade-right" data-aos-delay="100" role="region" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Liên hệ với mình</h2>
+    <div id="form-message" style="display: none; text-align: center; color: #10b981; margin-bottom: 20px; font-weight: 500;"></div>
+    <form id="contact-form" action="https://formspree.io/f/xdkljbke" method="POST" aria-label="Form liên hệ">
+      <input type="text" name="name" placeholder="Họ tên" required aria-label="Họ tên" data-aos="fade-up" data-aos-delay="100">
+      <input type="email" name="email" placeholder="Email" required aria-label="Email" data-aos="fade-up" data-aos-delay="150">
+      <input type="tel" name="phone" placeholder="Số điện thoại" aria-label="Số điện thoại" data-aos="fade-up" data-aos-delay="200">
+      <textarea name="message" rows="5" placeholder="Nội dung..." required aria-label="Nội dung tin nhắn" data-aos="fade-up" data-aos-delay="250"></textarea>
+      <button type="submit" aria-label="Gửi tin nhắn" data-aos="fade-up" data-aos-delay="300">Gửi</button>
     </form>
+    <div class="contact-info" data-aos="fade-up" data-aos-delay="350">
+      <p><strong>Liên hệ trực tiếp:</strong></p>
+      <p><a href="tel:+840888444984" aria-label="Số điện thoại">Số điện thoại: +84 0888444984</a></p>
+      <p><a href="mailto:nguyenlong17022009@gmail.com" aria-label="Email">Email: nguyenlong17022009@gmail.com</a></p>
+      <p><a href="https://facebook.com/nguyenlong1702" aria-label="Facebook">Facebook: Nguyễn Thanh Long</a></p>
+      <p><a href="https://www.instagram.com/thann._.lonnq/" aria-label="Instagram">Instagram: thann._.lonnq</a></p>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Nguyễn Thanh Long | Đam mê công nghệ<br>
-    Facebook: <a href="https://facebook.com/nguyenlong1702">Nguyễn Thanh Long</a></p>
+  <div class="chatbox-toggle" aria-label="Mở chatbox" onclick="toggleChatbox()">
+    <i class="fas fa-comment"></i>
+  </div>
+  <div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+      Chat cùng Long AI <span onclick="toggleChatbox()" aria-label="Đóng chatbox">✖</span>
+    </div>
+    <div class="chatbox-body" id="chatbox-body">
+      <div class="chatbox-message bot">Xin chào! Mình là Long AI, bạn muốn hỏi gì? Vì đây là AI đang được Long thử nghiệm nên những thông tin được cập nhật đang dừng ở năm 2024, thông cảm giúp mình vì đang trong giai đoạn phát triển 😄</div>
+    </div>
+    <div class="chatbox-input">
+      <input type="text" id="chatbox-input" placeholder="Nhập tin nhắn..." aria-label="Nhập tin nhắn chat">
+      <button onclick="sendMessage()" aria-label="Gửi tin nhắn chat">Gửi</button>
+    </div>
+  </div>
+
+  <footer role="contentinfo" data-aos="fade-up">
+    <p>© 2025 Nguyễn Thanh Long | Đam mê công nghệ và sáng tạo<br>
+    <a href="https://facebook.com/nguyenlong1702" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook: Nguyễn Thanh Long</a></p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({duration: 1000});
-    particlesJS("particles-js", {
-      particles: {number: {value: 40}, size: {value: 3}, move: {speed: 0.8}, line_linked: {enable: true, color: "#38bdf8"}},
-      interactivity: {events: {onhover: {enable: true, mode: "repulse"}}}
-    });
+    const API_KEY = "AIzaSyCJdXeUiPyr1kgkf5yn0TrqsjgtozuL7WE"; // 🔑 Thay bằng Gemini API Key của bạn
+
+    AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true });
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.style.width = entry.target.getAttribute('data-width');
+          entry.target.classList.add('filled');
         }
       });
-    }, {threshold: 0.5});
+    }, { threshold: 0.5 });
     document.querySelectorAll('.progress').forEach(p => observer.observe(p));
+
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          if (entry.target.id === 'about' || entry.target.id === 'contact') {
+            entry.target.style.transform = 'translateX(-20px)';
+          } else {
+            entry.target.style.transform = 'translateX(20px)';
+          }
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.section').forEach(s => sectionObserver.observe(s));
+
     const form = document.getElementById('contact-form');
     const button = form.querySelector('button');
     const formMessage = document.getElementById('form-message');
+    const jsConfetti = new JSConfetti();
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      const email = form.querySelector('input[name="email"]').value;
+      if (!email.includes('@')) {
+        form.classList.add('error');
+        formMessage.style.display = 'block';
+        formMessage.style.color = '#ef4444';
+        formMessage.textContent = 'Email không hợp lệ!';
+        setTimeout(() => form.classList.remove('error'), 300);
+        return;
+      }
       button.classList.add('loading');
       formMessage.style.display = 'none';
       try {
         const response = await fetch(form.action, {
           method: form.method,
           body: new FormData(form),
-          headers: {'Accept': 'application/json'}
+          headers: { 'Accept': 'application/json' }
         });
         if (response.ok) {
           button.classList.remove('loading');
           button.classList.add('success');
           formMessage.style.display = 'block';
-          formMessage.textContent = 'Tin nhắn của bạn đã được gửi thành công!';
+          formMessage.textContent = 'Tin nhắn đã được gửi thành công!';
+          jsConfetti.addConfetti({ emojis: ['🎉'] });
           form.reset();
           setTimeout(() => {
             button.classList.remove('success');
@@ -399,6 +918,117 @@
           button.classList.remove('error');
           formMessage.style.display = 'none';
         }, 3000);
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      document.body.style.setProperty('--scroll', scrollY / 100);
+    });
+
+    function createOrbs() {
+      for (let i = 0; i < 10; i++) {
+        const orb = document.createElement('div');
+        orb.className = 'orb';
+        orb.style.width = `${Math.random() * 50 + 20}px`;
+        orb.style.height = orb.style.width;
+        orb.style.left = `${Math.random() * 100}vw`;
+        orb.style.top = `${Math.random() * 100}vh`;
+        orb.style.animationDelay = `${Math.random() * 15}s`;
+        document.body.appendChild(orb);
+      }
+    }
+    createOrbs();
+
+    const typingElement = document.querySelector('.typing');
+    const words = typingElement.dataset.words.split(',');
+    let wordIndex = 0;
+    function typeWord() {
+      typingElement.textContent = `Học sinh THPT Củ Chi | Đam mê ${words[wordIndex]}`;
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(typeWord, 4000);
+    }
+    setTimeout(typeWord, 4000);
+
+    VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+      max: 8,
+      speed: 400,
+      perspective: 1000
+    });
+
+    function toggleChatbox() {
+      const chatbox = document.getElementById('chatbox');
+      chatbox.classList.toggle('open');
+    }
+
+    function appendMessage(sender, text) {
+      const chatBody = document.getElementById('chatbox-body');
+      const msg = document.createElement('div');
+      msg.className = `chatbox-message ${sender}`;
+      msg.textContent = text;
+      chatBody.appendChild(msg);
+      chatBody.scrollTop = chatBody.scrollHeight;
+      sessionStorage.setItem('chatMessages', chatBody.innerHTML);
+    }
+
+    async function sendMessageToGemini(userText) {
+      try {
+        const res = await fetch(
+          "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-goog-api-key": API_KEY
+            },
+            body: JSON.stringify({
+              contents: [
+                {
+                  parts: [
+                    { text: userText }
+                  ]
+                }
+              ]
+            })
+          }
+        );
+
+        const data = await res.json();
+        console.log("Gemini response:", data);
+
+        const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "❌ Không có phản hồi";
+        return reply;
+      } catch (err) {
+        console.error("Lỗi:", err);
+        return "❌ Lỗi kết nối Gemini";
+      }
+    }
+
+    async function sendMessage() {
+      const input = document.getElementById('chatbox-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendMessage("user", text);
+      input.value = "";
+
+      appendMessage("bot", "⏳ Đang suy nghĩ...");
+
+      const reply = await sendMessageToGemini(text);
+
+      document.getElementById('chatbox-body').lastChild.remove();
+      appendMessage("bot", reply);
+    }
+
+    document.getElementById('chatbox-input').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
+
+    window.addEventListener('load', () => {
+      const savedMessages = sessionStorage.getItem('chatMessages');
+      if (savedMessages) {
+        document.getElementById('chatbox-body').innerHTML = savedMessages;
+        document.getElementById('chatbox-body').scrollTop = document.getElementById('chatbox-body').scrollHeight;
       }
     });
   </script>
